@@ -1,0 +1,13 @@
+Databank and Data model - fully completed
+Layout and Navigation - fully completed
+Homepage - fully completed
+Detailpage - fully completed
+Login - fully completed
+Logout - fully completed
+Adding an entry - fully completed
+Imprint - could not understand this
+
+
+Extensions
+vlucas/phpdotenv
+

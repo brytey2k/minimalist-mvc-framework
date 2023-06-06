@@ -1,0 +1,7 @@
+How to setup
+- create the mysql database
+- import the database dump file (db.sql) into your database
+- open .env file in project and add the correct database credentials
+- the project root must be the public directory
+- you can start the project by running `php -S localhost:8080 -t public public/index.php`
+- Access the app from the browser by visiting http://localhost:8080
