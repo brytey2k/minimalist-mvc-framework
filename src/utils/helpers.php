@@ -58,3 +58,8 @@ function cleanRequestBody(array $body)
 
     return $cleaned;
 }
+
+function loadEnvConfig($envFileDir): void
+{
+    Dotenv\Dotenv::createUnsafeImmutable($envFileDir)->load();
+}

@@ -21,6 +21,10 @@
         "illuminate/view": "^10.13",
         "ext-pdo": "*",
         "respect/validation": "^2.2",
-        "jasongrimes/paginator": "^1.0"
+        "jasongrimes/paginator": "^1.0",
+        "illuminate/database": "^10.13",
+        "illuminate/console": "^10.13",
+        "illuminate/container": "^10.13",
+        "symfony/console": "^6.3"
     }
 }

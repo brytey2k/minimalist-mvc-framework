@@ -25,7 +25,7 @@ SessionHelper::start();
 | Load the environment variables
 |--------------------------------------------------------------------------
 */
-Dotenv\Dotenv::createUnsafeImmutable($projectRoot)->load();
+loadEnvConfig($projectRoot);
 
 /*
 |--------------------------------------------------------------------------
