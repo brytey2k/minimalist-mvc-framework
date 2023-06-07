@@ -21,7 +21,7 @@
                 <div class="col-md-9">
                     <p>
                         <a href="/blog/view-post?id={{ $post->post_id }}" style="color: black; text-decoration: none">
-                            {{ shortenText($post->content, 1000) }}
+                            {{ html_entity_decode(shortenText($post->content, 1000)) }}
                         </a>
                     </p>
                 </div>
@@ -36,7 +36,7 @@
                     <p>
                         Author:
                         <a href="?author={{ $post->author_id }}">
-                            {{ $post->first_name . ' ' . $post->last_name }}
+                            {{ html_entity_decode($post->first_name . ' ' . $post->last_name) }}
                         </a>
                     </p>
                 </div>

@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            {{ $post->content }}
+            {{ html_entity_decode($post->content) }}
         </div>
 
         <p><br>
@@ -32,7 +32,7 @@
     <div class="col-md-12">
         @foreach($comments as $comment)
             <div style="padding-bottom: 15px">
-                {{ $comment->name }}
+                {{ html_entity_decode($comment->name) }}
                 (
                 @php
                     $commentDate = new DateTime($comment->created_at);
@@ -46,7 +46,7 @@
                 {{ $postDate->format('H:i') . 'h' }}
                 )
 
-                : {{ $comment->content }}
+                : {{ html_entity_decode($comment->content) }}
 
                 @if($comment->author_id == @$_SESSION['user_id'])
                     <form style="display: inline" action="/comment/delete" method="post" onsubmit="return confirm('delete comment?')">
