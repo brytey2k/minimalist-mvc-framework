@@ -14,7 +14,7 @@ class CreateTableNameTablemSPrSVjZ extends Migration
      */
     public function up()
     {
-        Capsule::schema()->create('table_name', function (Blueprint $table) {
+        Capsule::schema()->create('comments', function (Blueprint $table) {
             $table->id('comment_id');
             $table->string('name');
             $table->string('email')->nullable();
@@ -32,6 +32,6 @@ class CreateTableNameTablemSPrSVjZ extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_name');
+        Schema::dropIfExists('comments');
     }
 }
