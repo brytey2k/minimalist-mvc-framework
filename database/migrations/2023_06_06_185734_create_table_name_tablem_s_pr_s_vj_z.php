@@ -20,6 +20,7 @@ class CreateTableNameTablemSPrSVjZ extends Migration
             $table->string('email')->nullable();
             $table->string('url')->nullable();
             $table->text('content');
+            $table->timestamp('created_at');
             $table->foreignId('author_id')->references('user_id')->on('users')->cascadeOnUpdate()->noActionOnDelete();
             $table->foreignId('post_id')->references('post_id')->on('posts')->cascadeOnUpdate()->cascadeOnDelete();
         });
