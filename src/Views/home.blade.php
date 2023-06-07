@@ -28,7 +28,7 @@
 
                 <div class="col-md-3">
                     <a href="/blog/view-post?id={{ $post->post_id }}" style="color: black; text-decoration: none">
-                        <img src="{{ $post->image }}" alt="{{ $post->title }}">
+                        <img src="{{ $post->image }}" alt="{{ $post->title }}" style="max-width: 100%">
                     </a>
                 </div>
 

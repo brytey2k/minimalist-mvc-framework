@@ -16,7 +16,7 @@
         <h2>{{ $post->title }}</h2>
 
         <div style="padding-bottom: 50px">
-            <img src="{{ $post->image }}" alt="{{ $post->title }}">
+            <img src="{{ $post->image }}" alt="{{ $post->title }}" style="max-width: 100%">
         </div>
 
         <div>
